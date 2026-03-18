@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="limpia formato de texto. pega texto con formato y cópialo limpio.">
+  <meta property="og:title" content="limpiatexto">
+  <meta property="og:description" content="limpia formato de texto. pega texto con formato y cópialo limpio.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <title>limpiatexto</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg width='64' height='64' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='0' y='54' font-size='54'%3E✂️%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <textarea id="input" class="text-area" spellcheck="false" autofocus
+      placeholder="pega aquí tu texto con o sin formato..."></textarea>
+
+    <div class="controls">
+      <button id="tLower" class="toggle-btn" type="button" aria-pressed="false"
+        title="convertir todo a minúsculas (Alt+L)">a→a minúsculas</button>
+      <button id="tNoBreaks" class="toggle-btn" type="button" aria-pressed="false"
+        title="eliminar saltos de línea (Alt+N)">eliminar saltos de línea</button>
+    </div>
+
+    <div id="output" class="text-area output-area" tabindex="0"></div>
+
+    <button id="copyBtn" class="btn-primary copy-btn">copiar texto limpio</button>
+
+    <div class="branding-badge">
+      <a href="https://meowrhino.studio" target="_blank" rel="noopener noreferrer">meowrhino.studio</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
