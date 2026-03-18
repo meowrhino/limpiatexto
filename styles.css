@@ -138,9 +138,13 @@ body {
 
 /* Branding */
 .branding-badge {
-  margin: 2rem 0 1rem;
+  position: fixed;
+  bottom: 10dvh;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   font-size: 0.65rem;
+  z-index: 10;
 }
 
 .branding-badge a {
@@ -156,11 +160,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .container {
-    gap: 0.75rem;
-  }
-
+@media (max-width: 400px) {
   .controls {
     flex-direction: column;
     align-items: stretch;
